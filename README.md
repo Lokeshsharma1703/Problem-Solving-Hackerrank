@@ -15,3 +15,5 @@
 11. https://www.hackerrank.com/challenges/time-conversion/problem
 12. https://www.hackerrank.com/challenges/grading/problem
 13. https://www.hackerrank.com/challenges/apple-and-orange/problem
+14. https://www.hackerrank.com/challenges/kangaroo/problem
+15. https://www.hackerrank.com/challenges/between-two-sets/problem

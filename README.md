@@ -17,3 +17,5 @@
 13. https://www.hackerrank.com/challenges/apple-and-orange/problem
 14. https://www.hackerrank.com/challenges/kangaroo/problem
 15. https://www.hackerrank.com/challenges/between-two-sets/problem
+16. https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+17. https://www.hackerrank.com/challenges/the-birthday-bar/problem

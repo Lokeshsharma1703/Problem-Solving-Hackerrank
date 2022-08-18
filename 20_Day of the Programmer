@@ -1,0 +1,117 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'dayOfProgrammer' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts INTEGER year as parameter.
+     */
+
+    public static String dayOfProgrammer(int year) {
+        int month = 0;
+        int days = 0;
+        while(days<256)
+        {
+            month++;
+            if(month==2)
+            {
+                if(year==1918)
+                    days+=15;
+                else if(year<1918)
+                {
+                    if(year%4==0)
+                    {
+                        days+=29;
+                    }
+                    else
+                    {
+                        days+=28;
+                    }
+                }
+                else
+                {
+                    if((year%4==0 && year%100!=0) || year%400==0)
+                    {
+                        days+=29;
+                    }
+                    else
+                    {
+                        days+=28;
+                    }
+                }
+            }
+            else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+                days+=31;
+            else
+                days+=30;
+        }
+        int day = 0;
+        if(month==2)
+            {
+                if(year==1918)
+                    day=15;
+                else if(year<1918)
+                {
+                    if(year%4==0)
+                    {
+                        day=29;
+                    }
+                    else
+                    {
+                        day=28;
+                    }
+                }
+                else
+                {
+                    if((year%4==0 && year%100!=0) || year%400==0)
+                    {
+                        day=29;
+                    }
+                    else
+                    {
+                        day=28;
+                    }
+                }
+            }
+            else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+                day=31;
+            else
+                day=30;
+        while(days>256)
+        {
+            day--;
+            days--;
+        }
+        return String.format("%02d.%02d.%04d",day,month,year);
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int year = Integer.parseInt(bufferedReader.readLine().trim());
+
+        String result = Result.dayOfProgrammer(year);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}

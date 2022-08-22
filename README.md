@@ -24,3 +24,4 @@
 20. https://www.hackerrank.com/challenges/day-of-the-programmer/problem
 21. https://www.hackerrank.com/challenges/bon-appetit/problem
 22. https://www.hackerrank.com/challenges/drawing-book/problem
+23. https://www.hackerrank.com/challenges/electronics-shop/problem

@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int q = sc.nextInt();
+        for(int i=0;i<q;i++){
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            int a_dis = Math.abs(a-c);
+            int b_dis = Math.abs(b-c);
+            if(a_dis == b_dis){
+                System.out.println("Mouse C");
+            }
+            else if(a_dis > b_dis){
+                System.out.println("Cat B");
+            }
+            else if(a_dis < b_dis){
+                System.out.println("Cat A");
+            }
+        }
+    }
+}

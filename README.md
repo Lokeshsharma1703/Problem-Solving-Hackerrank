@@ -25,3 +25,4 @@
 21. https://www.hackerrank.com/challenges/bon-appetit/problem
 22. https://www.hackerrank.com/challenges/drawing-book/problem
 23. https://www.hackerrank.com/challenges/electronics-shop/problem
+24. https://www.hackerrank.com/challenges/cats-and-a-mouse/problem

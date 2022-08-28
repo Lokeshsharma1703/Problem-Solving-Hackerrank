@@ -26,3 +26,4 @@
 22. https://www.hackerrank.com/challenges/drawing-book/problem
 23. https://www.hackerrank.com/challenges/electronics-shop/problem
 24. https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
+25. https://www.hackerrank.com/challenges/designer-pdf-viewer/problem
